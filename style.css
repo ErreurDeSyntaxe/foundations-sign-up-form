@@ -42,7 +42,7 @@ body {
 }
 
 main {
-    background-color: dimgray;
+    background-color: black;
     height: 100vh;
     flex: 1;
 }
@@ -52,6 +52,7 @@ main {
     margin-bottom: 6%;
     margin-left: 45px;
     font-size: 2rem;
+    color: whitesmoke;
 }
 
 ul {
@@ -60,7 +61,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     padding: 35px 0 35px 45px;
-    background-color: darkgray;
+    background-color: white;
     text-transform: uppercase;
 }
 
@@ -68,14 +69,56 @@ ul li {
     margin-right: 80px;
 }
 
-input {
-    width: 350px;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid black;
-    font-size: 2rem;
-    padding: 0 15px;
-    margin-bottom: 17px;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 14px;
+    padding-left: 12px;
+}
+
+ul li:nth-of-type(2n + 1) > input:valid {
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+ul li:nth-of-type(2n) > input:valid {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+ul li:nth-of-type(2n + 1)>input:invalid {
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
+}
+
+ul li:nth-of-type(2n)>input:invalid {
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+ul li:nth-of-type(2n + 1)>input:focus {
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+}
+
+ul li:nth-of-type(2n)>input:focus {
+    border-top: 2px solid blue;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
 }
 
 #submit-button {
@@ -83,6 +126,7 @@ input {
     color: whitesmoke;
     background-color: black;
     padding: 14px 25px 14px 25px;
+    border: 2px solid whitesmoke;
     border-radius: 9px;
     margin-top: 40px;
     margin-left: 45px;
@@ -95,9 +139,10 @@ input {
 #already {
     margin-left: 45px;
     margin-top: 15px;
+    color: gray;
 }
 
 #already a {
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
 }
