@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sing Up Now</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    
+    <div class="decoration">
+        <!-- <img src="./images/background-knight.png" alt="A Knight (the chess piece) in Mandala pattern with bright colors, created by MidJourney v 4"> -->
+        <div class="banner">Coach Cagnus</div>
+    </div>
+    <main>
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+
+        <div class="forms">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" placeholder="Cagnus" minlength="2" maxlength="20">
+
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" placeholder="Marlsen" minlength="2" maxlength="20">
+
+            <label for="user_email">Email Address</label>
+            <input type="email" name="email" id="user_email" placeholder="cagnus@thegoat.com">
+
+            <label for="phone_number">Phone Number</label>
+            <input type="tel" id="phone_number" name="phone_number">
+
+            <label for="create_password">Password</label>
+            <input type="password" id="create_password" name="password1" minlength="8" maxlength="16">
+
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="password2" minlength="8" maxlength="16">
+        </div>
+        <button id="submit-button" type="submit">Create Account</button>
+    </main>
 </body>
 </html>
