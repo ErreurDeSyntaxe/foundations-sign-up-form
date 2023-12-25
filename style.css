@@ -42,18 +42,62 @@ body {
 }
 
 main {
-    background-color: bisque;
+    background-color: dimgray;
     height: 100vh;
     flex: 1;
-    padding-left: 35px;
+}
+
+.text {
+    margin-top: 16%;
+    margin-bottom: 6%;
+    margin-left: 45px;
+    font-size: 2rem;
 }
 
 ul {
     list-style: none;
-    width: 500px;
+    width: calc(100% - 45px);
     display: flex;
     flex-wrap: wrap;
-    gap: 46px;
-    background-color: aliceblue;
+    padding: 35px 0 35px 45px;
+    background-color: darkgray;
+    text-transform: uppercase;
 }
 
+ul li {
+    margin-right: 80px;
+}
+
+input {
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 2rem;
+    padding: 0 15px;
+    margin-bottom: 17px;
+}
+
+#submit-button {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: black;
+    padding: 14px 25px 14px 25px;
+    border-radius: 9px;
+    margin-top: 40px;
+    margin-left: 45px;
+}
+
+#submit-button:hover {
+    cursor: pointer;
+}
+
+#already {
+    margin-left: 45px;
+    margin-top: 15px;
+}
+
+#already a {
+    color: white;
+    text-decoration: none;
+}

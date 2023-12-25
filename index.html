@@ -20,20 +20,23 @@
     </div>
 
     <main>
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your
-            deepest dreams. Sign up <em>now</em> to get started.</p>
-        <p>You <em>know</em> you want to.</p>
+
+        <div class="text">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your
+                deepest dreams. Sign up <em>now</em> to get started.</p><br>
+            <p>You <em>know</em> you want to.</p>
+        </div>
 
         <div class="forms">
             <form action="erreurdesyntaxe.github.io/path" method="post">
                 <ul>
                     <li>
                         <label for="first_name">First Name</label><br>
-                        <input type="text" id="first_name" placeholder="Cagnus" minlength="2" maxlength="20" pattern="/^([^0-9]*)$/">
+                        <input type="text" id="first_name" placeholder="Cagnus" minlength="2" maxlength="20" pattern="/^[a-z ,.'-]+$/i">
                     </li>
                     <li>
                         <label for="last_name">Last Name</label><br>
-                        <input type="text" id="last_name" placeholder="Marlsen" minlength="2" maxlength="20" pattern="/^([^0-9]*)$/">
+                        <input type="text" id="last_name" placeholder="Marlsen" minlength="2" maxlength="20" pattern="/^[a-z ,.'-]+$/i">
                     </li>
                     <li>
                         <label for="user_email">Email Address</label><br>
@@ -56,6 +59,7 @@
                 <div>
                     <button id="submit-button" type="submit">Create Account</button>
                 </div>
+                <p id="already">Already have an account? <a href="#submit-button">Log in</a></p>
             </form>
         </div>
     </main>
