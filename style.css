@@ -13,3 +13,47 @@
 html {
     font-family: Roboto, 'Times New Roman', Times, serif;
 }
+
+body {
+    display: flex;
+}
+
+.decoration {
+    background-image: url(./images/background-king1-edit.png);
+    background-position: center;
+    width: 38vw;
+    height: 100vh;
+}
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 5em;
+    line-height: 3em;
+    margin-top: 30%;
+    text-align: center;
+    display: flex;
+}
+
+.banner img {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+
+main {
+    background-color: bisque;
+    height: 100vh;
+    flex: 1;
+    padding-left: 35px;
+}
+
+ul {
+    list-style: none;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 46px;
+    background-color: aliceblue;
+}
+
