@@ -22,3 +22,8 @@ too much about my looks. Good enough is my aim. But for a job, a good enough
 front end is terrible. It needs to be glorious, and I have a growing feeling
 that I am not cut out for that part of the job. Design was never my strength,
 and neither was style. Still, I trudge on.
+
+# Fourth Entry: Starting Anew
+
+I am unsatisfied with my project. Perhaps it is good enough, but it doesn't
+feel good enough. I'll start from scratch. 
