@@ -1,19 +1,15 @@
 # TOP Sign Up Form
 A sign-up form (for an imaginary service)
 
-# Test1
+# Preview
 
 <div align="center">
-    <img src="./images/background-img.png">
+    <img src="./images/preview.png">
 </div>
-
-# Test2
-
-![](https://github.com/ErreurDeSyntaxe/sign-up-form/blob/main/images/background-img.png)
 
 # Links
 
--[Assignment Page (might have been updated)](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
+-[Assignment Page (Dec '23)](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
 
 -[Finished Project](https://erreurdesyntaxe.github.io/sign-up-form/)
 
