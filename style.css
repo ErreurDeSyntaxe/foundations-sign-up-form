@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+
+:root {
+    --nav-height: 4rem;
+    --footer-height: 1.8rem;
+    --dark-blue: #151823;
+    --light-taupe: #c27e6a;
+    --garnet: #6b3639;
+    --left-side-width: 38vw;
+    --left-margin: 3rem;
+}
+
+/* COMMON STYLING */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,136 +27,150 @@
 html {
     font-family: Roboto, 'Times New Roman', Times, serif;
 }
+/* COMMON STYLING -- END */
 
+
+/* NAVIGATION BAR STYLING */
+nav {
+    background-color: var(--dark-blue);
+    height: var(--nav-height);
+    padding: 1rem 3rem 1rem 3rem;
+    & > ul {
+        list-style: none;
+        font-size: 1.6rem;
+        display: flex;
+        gap: 2rem;
+        & li:nth-child(1) {
+            flex: 1;
+        } 
+    }
+    & a {
+        text-decoration: none;
+        color: white
+    }
+}
+/* NAVIGATION BAR STYLING -- END */
+
+/* MAIN STYLING */
 body {
     display: flex;
-}
-
-.decoration {
-    background-image: url(./images/background-king1-edit.png);
-    background-position: center;
-    width: 38vw;
+    flex-direction: column;
     height: 100vh;
-}
-
-.banner {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    font-size: 5em;
-    line-height: 3em;
-    margin-top: 30%;
-    text-align: center;
-    display: flex;
-}
-
-.banner img {
-    width: 150px;
-    height: 150px;
-    align-self: center;
 }
 
 main {
-    background-color: black;
-    height: 100vh;
-    flex: 1;
-}
-
-.text {
-    margin-top: 16%;
-    margin-bottom: 6%;
-    margin-left: 45px;
-    font-size: 2rem;
-    color: whitesmoke;
-}
-
-ul {
-    list-style: none;
-    width: calc(100% - 45px);
     display: flex;
-    flex-wrap: wrap;
-    padding: 35px 0 35px 45px;
-    background-color: white;
-    text-transform: uppercase;
 }
 
-ul li {
-    margin-right: 80px;
+.left-content {
+    height: calc(100vh - var(--footer-height) - var(--nav-height));
+    width: var(--left-side-width);
+    & > img {
+        height: calc(100vh - var(--footer-height) - var(--nav-height));
+        width: var(--left-side-width);
+        position: relative;
+    }
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="password"] {
-    width: 300px;
-    height: 30px;
-    margin-bottom: 14px;
-    padding-left: 12px;
+.banner {
+    height: 275px;
+    width: var(--left-side-width);
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: calc(2rem + 2vw);
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    top: 30%;
+    & img {
+        width: 200px;
+        height: 200px;
+        margin-left: 2rem;
+    }
 }
 
-ul li:nth-of-type(2n + 1) > input:valid {
-    border-top: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
+.right-content {
+    background-color: var(--light-taupe);
 }
 
-ul li:nth-of-type(2n) > input:valid {
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid transparent;
-    border-left: 2px solid transparent;
+.disclaimer {
+    font-size: calc(1rem + 1vw);
+    margin-top: calc(3rem + 2vh);
+    margin-right: 10px;
+    margin-bottom: calc(2rem + 2vh);
+    margin-left: var(--left-margin);
 }
 
-ul li:nth-of-type(2n + 1)>input:invalid {
-    border-top: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 2px solid red;
-    border-left: 2px solid red;
+.my-forms ul {
+    background-color: var(--garnet);
+    padding: calc(2rem + 2vh) 0 calc(2rem + 2vh) var(--left-margin);
 }
 
-ul li:nth-of-type(2n)>input:invalid {
-    border-top: 2px solid red;
-    border-right: 2px solid red;
-    border-bottom: 2px solid transparent;
-    border-left: 2px solid transparent;
+form {
+    /* margin-left: var(--left-margin); */
+    & > ul {
+        list-style: none;
+        color: white;
+        text-transform: uppercase;
+        display: flex;
+        flex-wrap: wrap;
+        & li {
+            margin-right: calc(1rem + 1vw);
+            margin-bottom: calc(1rem + 1vh);
+        }
+    }
+    /* INPUT STYLING */
+    & input {
+        width: calc(300px + 2.9vw);
+        height: 40px;
+        padding-left: 8px;
+        font-size: 2rem;
+        border: 3px solid black;
+    }
+    & input:focus,
+    input:focus-visible {
+        outline: none;
+        border: 3px solid blue;
+        background-color: #6c95b1;
+        
+    }
+    & input:user-invalid {
+        border: 3px solid red;
+    }
+    & input:user-valid {
+        border: 3px solid green;
+    }
+    /* INPUT STYLING -- END */
 }
 
-ul li:nth-of-type(2n + 1)>input:focus {
-    border-top: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 2px solid blue;
-    border-left: 2px solid blue;
+.bottom-elem {
+    margin-left: var(--left-margin);
+    margin-top: 2rem;
+    & button {
+        padding: 1rem 2rem;
+        margin-bottom: 1rem;
+        background-color: var(--garnet);
+        color: white;
+        font-size: 1.3rem;
+    }
+    & a {
+        color: white;
+        text-decoration: none;
+    }
 }
+/* MAIN STYLING -- END */
 
-ul li:nth-of-type(2n)>input:focus {
-    border-top: 2px solid blue;
-    border-right: 2px solid blue;
-    border-bottom: 2px solid transparent;
-    border-left: 2px solid transparent;
+/* FOOTER STYLING */
+footer {
+    height: var(--footer-height);
+    background-color: var(--dark-blue);
+    color: white;
+    text-align: center;
+    padding-top: .5rem;
+    & a {
+        color: white;
+    }
 }
-
-#submit-button {
-    font-size: 1.5rem;
-    color: whitesmoke;
-    background-color: black;
-    padding: 14px 25px 14px 25px;
-    border: 2px solid whitesmoke;
-    border-radius: 9px;
-    margin-top: 40px;
-    margin-left: 45px;
-}
-
-#submit-button:hover {
-    cursor: pointer;
-}
-
-#already {
-    margin-left: 45px;
-    margin-top: 15px;
-    color: gray;
-}
-
-#already a {
-    color: whitesmoke;
-    text-decoration: none;
-}
+/* FOOTER STYLING -- END */
