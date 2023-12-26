@@ -4,7 +4,7 @@ A sign-up form (for an imaginary service)
 # Test1
 
 <div align="center">
-    <img src="./images/background-img.png>
+    <img src="./images/background-img.png">
 </div>
 
 # Test2
