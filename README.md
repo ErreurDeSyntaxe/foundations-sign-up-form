@@ -5,9 +5,9 @@ A sign-up form (for an imaginary service)
 
 # Links
 
-[Assignment Page (might have been updated)](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
-![Assignment Page (might have been updated)](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
-[Finished Project](https://erreurdesyntaxe.github.io/sign-up-form/)
+-[Assignment Page (might have been updated)](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
+
+-[Finished Project](https://erreurdesyntaxe.github.io/sign-up-form/)
 
 # Notable Features
 
