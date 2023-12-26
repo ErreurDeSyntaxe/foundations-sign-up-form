@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
+
+:root {
+    --nav-height: 4rem;
+    --footer-height: 1.8rem;
+    --dark-blue: #151823;
+    --left-side-width: 38vw;
+    --light-taupe: #c27e6a;
+    --left-margin: 3rem;
+}
+
 /* COMMON STYLING */
 * {
     box-sizing: border-box;
@@ -20,13 +30,13 @@ html {
 
 
 /* NAVIGATION BAR STYLING */
-
 nav {
-    background-color: #151823;
-    & ul {
+    background-color: var(--dark-blue);
+    height: var(--nav-height);
+    padding: 1rem 3rem 1rem 3rem;
+    & > ul {
         list-style: none;
         font-size: 1.6rem;
-        padding: 1rem;
         display: flex;
         gap: 2rem;
         & li:nth-child(1) {
@@ -40,3 +50,71 @@ nav {
 }
 /* NAVIGATION BAR STYLING -- END */
 
+/* MAIN STYLING */
+/* MAIN STYLING */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+}
+
+.left-content {
+    height: calc(100vh - var(--footer-height) - var(--nav-height));
+    width: var(--left-side-width);
+    & > img {
+        height: calc(100vh - var(--footer-height) - var(--nav-height));
+        width: var(--left-side-width);
+        position: relative;
+    }
+}
+
+/* SEMI TRANSPARENT BANNER STYLING */
+.banner {
+    height: 255px;
+    width: var(--left-side-width);
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    top: 30%;
+    & img {
+        width: 200px;
+        height: 200px;
+        margin-left: 2rem;
+    }
+}
+/* SEMI TRANSPARENT BANNER STYLING -- END */
+
+.right-content {
+    background-color: var(--light-taupe);
+}
+
+.disclaimer {
+    font-size: 2.3rem;
+    margin-left: var(--left-margin);
+}
+
+
+/* MAIN STYLING -- END */
+/* MAIN STYLING -- END */
+
+/* FOOTER STYLING */
+footer {
+    height: var(--footer-height);
+    background-color: var(--dark-blue);
+    color: white;
+    text-align: center;
+    padding-top: .5rem;
+    & a {
+        color: white;
+    }
+}
+/* FOOTER STYLING -- END */
