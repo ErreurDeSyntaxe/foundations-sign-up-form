@@ -1,7 +1,15 @@
 # TOP Sign Up Form
 A sign-up form (for an imaginary service)
 
-[](https://github.com/ErreurDeSyntaxe/sign-up-form/blob/main/images/background-img.png)
+# Test1
+
+<div align="center">
+    <img src="./images/background-img.png>
+</div>
+
+# Test2
+
+![](https://github.com/ErreurDeSyntaxe/sign-up-form/blob/main/images/background-img.png)
 
 # Links
 
