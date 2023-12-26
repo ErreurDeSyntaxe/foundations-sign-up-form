@@ -1,29 +1,48 @@
-# sign-up-form
-A sign-up for (for an imaginary service)
+# TOP Sign Up Form
+A sign-up form (for an imaginary service)
 
-# First Entry
+[](https://github.com/ErreurDeSyntaxe/sign-up-form/blob/main/images/background-img.png)
+
+# Links
+
+[Assignment Page (might have been updated)](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
+![Assignment Page (might have been updated)](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
+[Finished Project](https://erreurdesyntaxe.github.io/sign-up-form/)
+
+# Notable Features
+
+Validate input
+Style input through pseudo selectors
+Design a clean page that survives resizing
+
+# Challenges
+
+Styling input fields: Chrome and Firefox apply their own style, and I was lucky
+to come across the outline: none; that was not mentioned on TOP.
+
+Resizing the page: The large image on the left side does not resize correctly 
+depending on the ratio of the viewport. I tried to tweak it to work, but I have
+not succeeded yet.
+
+# Lessons
+
+Form styling is hard. 
+There is a property called outline.
+There is a pseudo selector called input:user-invalid.
+Nested CSS is sometimes easier to write, read, and understand.
+
+# Diary
 
 This is the first project of the Full Stack JavaScript course of The Odin
 Project. Finally! 16 lessons' worth of readings and exercises have come to 
 an end. 
 
-# Second Entry: Making A Plan
+One aspect of the problem solving technique that I have neglected during other 
+projects is the planning. But for this project, I have made a draft of the 
+web page and thought of the challenges hidden within. Whenever my progress 
+catches up to the plan, said plan will have to be revisited and expanded upon. 
 
-One aspect of the problem solving technique that I have been neglecting is
-the planning. But for this project, I have made a draft of the web page and
-thought of the challenges hidden within. Whenever my progress catches up to the
-plan, said plan will have to be revisited and expanded upon. 
-
-# Third Entry: Styling
-
-The more I work on the Odin Project path, the more I dislike styling and the
-front end in general. It is much like aesthetics in real life. I never cared
-too much about my looks. Good enough is my aim. But for a job, a good enough
-front end is terrible. It needs to be glorious, and I have a growing feeling
-that I am not cut out for that part of the job. Design was never my strength,
-and neither was style. Still, I trudge on.
-
-# Fourth Entry: Starting Anew
-
-I am unsatisfied with my project. Perhaps it is good enough, but it doesn't
-feel good enough. I'll start from scratch. 
+I often struggle with styling and the front end in general, but maybe that is
+simply due to not having written much JS. Maybe if I do more back end projects
+I will find it arduous as well. It's the desert of despair part of the 
+programming student's journey.

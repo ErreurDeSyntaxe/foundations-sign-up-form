@@ -109,7 +109,6 @@ main {
 }
 
 form {
-    /* margin-left: var(--left-margin); */
     & > ul {
         list-style: none;
         color: white;
