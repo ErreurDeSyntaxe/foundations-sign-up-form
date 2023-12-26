@@ -3,17 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sing Up Now</title>
+    <title>Sleepy Chess | Sing Up</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
 </head>
 <body>
     
-   
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">My Account</a></li>
+            <li><a href="">Settings</a></li>
+        </ul>
+    </nav>
+
+    <div class="left-content">
+        <img id="background-img" src="./images/background-img.png" alt="the chess piece in a sunset picture, in the style of speedpainting, a storm brewing in the background, by MidJourney v4">
+        <div class="banner"><img id="icon-img" src="./images/icon.png" alt="A portrait of a sleeping woman surrounded by stars in the style of neon art nouveau, by MidJourney v4">Learn Chess In Your Sleep!</div>
+    </div>
+
+    <div class="right-content">
+        <div class="invitation">
+            This is <em>not</em> a real service. It is a student-built website 
+            to further comprehension and mastery of HTML, CSS, and JavaScript. 
+            It is an imaginary service that the author wishes existed.
+        </div>
+        <div class="my-forms">
+            <form action="" method="">
+                <ul>
+                    <li>
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" required minlength="2" maxlength="20" pattern="/^[a-z ,.'-]+$/i">
+                    </li>
+                    <li>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" required minlength="2" maxlength="20" pattern="/^[a-z ,.'-]+$/i">
+                    </li>
+                    <li>
+                        <label for="user_email">Email Address</label>
+                        <input type="email" id="user_email" name="user_email" required minlength="2" maxlength="20">
+                    </li>
+                    <li>
+                        <label for="telephone">Phone Number</label>
+                        <input type="tel" id="telephone" name="phone_number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
+                    </li>
+                    <li>
+                        <label for="password1">Create Password (8 to 16 characters)</label>
+                        <input type="password" id="password1" name="password1" required minlength="8" maxlength="16">
+                    </li>
+                    <li>
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" id="password2" name="password2" required minlength="8" maxlength="16">
+                    </li>
+                </ul>
+
+                <button type="submit" class="submit-button">Create Account</button>
+
+                <p>Already have an account? <a href="">Log in</a></p>
+            </form>
+        </div>
+    </div>
+
+    <footer>This website is a creation of Erreur De Syntaxe, following the Full Stack JavaScript path on The Odin Project.</footer>
 
 </body>
 </html>
