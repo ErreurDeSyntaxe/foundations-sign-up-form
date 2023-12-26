@@ -5,8 +5,9 @@
     --nav-height: 4rem;
     --footer-height: 1.8rem;
     --dark-blue: #151823;
-    --left-side-width: 38vw;
     --light-taupe: #c27e6a;
+    --garnet: #6b3639;
+    --left-side-width: 38vw;
     --left-margin: 3rem;
 }
 
@@ -51,7 +52,6 @@ nav {
 /* NAVIGATION BAR STYLING -- END */
 
 /* MAIN STYLING */
-/* MAIN STYLING */
 body {
     display: flex;
     flex-direction: column;
@@ -72,15 +72,14 @@ main {
     }
 }
 
-/* SEMI TRANSPARENT BANNER STYLING */
 .banner {
-    height: 255px;
+    height: 275px;
     width: var(--left-side-width);
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     gap: 1rem;
     align-items: center;
-    font-size: 4rem;
+    font-size: calc(2rem + 2vw);
     font-weight: 400;
     color: white;
     position: absolute;
@@ -91,19 +90,76 @@ main {
         margin-left: 2rem;
     }
 }
-/* SEMI TRANSPARENT BANNER STYLING -- END */
 
 .right-content {
     background-color: var(--light-taupe);
 }
 
 .disclaimer {
-    font-size: 2.3rem;
+    font-size: calc(1rem + 1vw);
+    margin-top: calc(3rem + 2vh);
+    margin-right: 10px;
+    margin-bottom: calc(2rem + 2vh);
     margin-left: var(--left-margin);
 }
 
+.my-forms ul {
+    background-color: var(--garnet);
+    padding: calc(2rem + 2vh) 0 calc(2rem + 2vh) var(--left-margin);
+}
 
-/* MAIN STYLING -- END */
+form {
+    /* margin-left: var(--left-margin); */
+    & > ul {
+        list-style: none;
+        color: white;
+        text-transform: uppercase;
+        display: flex;
+        flex-wrap: wrap;
+        & li {
+            margin-right: calc(1rem + 1vw);
+            margin-bottom: calc(1rem + 1vh);
+        }
+    }
+    /* INPUT STYLING */
+    & input {
+        width: calc(300px + 2.9vw);
+        height: 40px;
+        padding-left: 8px;
+        font-size: 2rem;
+        border: 3px solid black;
+    }
+    & input:focus,
+    input:focus-visible {
+        outline: none;
+        border: 3px solid blue;
+        background-color: #6c95b1;
+        
+    }
+    & input:user-invalid {
+        border: 3px solid red;
+    }
+    & input:user-valid {
+        border: 3px solid green;
+    }
+    /* INPUT STYLING -- END */
+}
+
+.bottom-elem {
+    margin-left: var(--left-margin);
+    margin-top: 2rem;
+    & button {
+        padding: 1rem 2rem;
+        margin-bottom: 1rem;
+        background-color: var(--garnet);
+        color: white;
+        font-size: 1.3rem;
+    }
+    & a {
+        color: white;
+        text-decoration: none;
+    }
+}
 /* MAIN STYLING -- END */
 
 /* FOOTER STYLING */
