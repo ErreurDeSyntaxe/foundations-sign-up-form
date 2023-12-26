@@ -79,7 +79,7 @@ main {
     display: flex;
     gap: 1rem;
     align-items: center;
-    font-size: calc(2rem + 2vw);
+    font-size: calc(1rem + 3vw);
     font-weight: 400;
     color: white;
     position: absolute;
@@ -123,7 +123,7 @@ form {
     }
     /* INPUT STYLING */
     & input {
-        width: calc(300px + 2.9vw);
+        width: calc(200px + 8.9vw);
         height: 40px;
         padding-left: 8px;
         font-size: 2rem;
