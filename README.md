@@ -1,4 +1,4 @@
-# TOP Sign Up Form
+# foundations Sign Up Form
 A sign-up form (for an imaginary service)
 
 # Preview
@@ -11,7 +11,7 @@ A sign-up form (for an imaginary service)
 
 -[Assignment Page (Dec '23)](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
 
--[Finished Project](https://erreurdesyntaxe.github.io/sign-up-form/)
+-[Finished Project](https://erreurdesyntaxe.github.io/foundations-sign-up-form/)
 
 # Notable Features
 
